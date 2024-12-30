@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WordMaster.MainPage">
+
+    <Grid RowDefinitions="Auto, *, Auto" ColumnDefinitions="*" BackgroundColor="GhostWhite"> <!--behind all buttons, image?-->
+        <Grid Row="0" Column="0" BackgroundColor="Turquoise" Padding="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <StackLayout Grid.Column="0" Orientation="Horizontal" VerticalOptions="Center">
+             <!--
+                <Switch VerticalOptions="Start"/> darkmodde add logic and find way to add text or icon to it-->
+            </StackLayout>
+            <Label Grid.Column="1" Text="WORDMASTER" FontSize="Header" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+            <!--<Button Grid.Column="2" Text="MENU" HeightRequest="50" WidthRequest="80" BackgroundColor="GhostWhite" BorderColor="Black"
+                    TextColor="Black"/>-->
+        </Grid>
+        <StackLayout Grid.Row="1" Margin="20" VerticalOptions="Start"><!--menu/buttons add functionality, customize?-->
+            <Label Text="Welcome to WordMaster" FontSize="Title" HorizontalOptions="Center" BackgroundColor="Transparent"/>
+            <Button Text="STANDARD MODE" HorizontalOptions="CenterAndExpand" Margin="0, 10, 0, 0"
+                    BackgroundColor="Turquoise" BorderColor="Black" Clicked="Standard_Clicked"/>
+            <Button Text="VERSUS MODE" HorizontalOptions="CenterAndExpand" Margin="0, 10, 0, 0"
+                    BackgroundColor="Turquoise" BorderColor="Black" Clicked="Versus_Clicked"/>
+            <Button Text="PRESSURE MODE" HorizontalOptions="CenterAndExpand" Margin="0, 10, 0, 0"
+                    BackgroundColor="Turquoise" BorderColor="Black" Clicked="Pressure_Clicked"/>
+            <Button Text="VIEW STATS" HorizontalOptions="CenterAndExpand" Margin="0, 10, 0, 0"
+                    BackgroundColor="Turquoise" BorderColor="Black" Clicked="Stats_Clicked"/>
+            <Button Text="HOW TO PLAY" HorizontalOptions="CenterAndExpand" Margin="0, 10, 0, 0"
+                    BackgroundColor="Turquoise" BorderColor="Black" Clicked="Instructions_Clicked"/>
+        </StackLayout>
+        <StackLayout Grid.Row="2" BackgroundColor="Turquoise" Orientation="Horizontal">
+            <Label Text="" HorizontalOptions="Center" VerticalOptions="Center" Padding="10" /><!--need to align center, maybe add some details?-->
+        </StackLayout>
+    </Grid>
+</ContentPage>
+<!--check-->
